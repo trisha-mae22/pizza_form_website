@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAHUT</title>
+    <link rel="icon" type="image/png" href="images/pizza.png" >
+    <link rel="stylesheet" href="style.css">
+<style>
+ 
+  table{
+    border-collapse: collapse ;
+  }
+ th, td,tr{
+    border:1px solid black;
+    padding:1%;
+
+  }
+
+</style>
+</head>
+
+<body>
+ <h1>PIZZAHUT</h1>
+ <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</li>
+                <li><a href="personal_details.html">Personal Detail</li>    
+                     <li><a href="pizza_size.html">Pizza Size</li>
+                         <li><a href="crust_type_&_size.html">Crust Type & Size</li> 
+                             <li><a href="sauce_topping.html">Pizza_sauce & topping</li> </li>
+                                  <li><a href="delivery_paymentmethod.html">Delivery Method and Payment</a></li>
+                                        <li><a href="order_sum.html">Order Summary</li>        
+        </ul>
+    </nav>
+</div>
+    <div>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name" >Name</label><br>
+            <input type="text" id="name" placeholder="Enter Full Name" minlength="5" maxlength="60" required></input><br>
+            <label for="Email" >Email</label><br>
+            <input type="email" id="email"placeholder="Enter working email"><br>
+            <label for="phone_number">Phone number:</label><br>
+            <input type="tel" pattern="[0-9]{11}"  maxlength="11"></input><br>
+            <label for="age">Age</label><br>
+            <input type="number" min="13" max="99" alert=""></a></input><br>
+            </fieldset>
+        </form>
+    </div>
+   <div class="size">
+        <p>Choose you Pizza sizes</p>
+        <input type="radio" id="size1" name="size" ></input>
+        <label for="size1">small</label><br>
+        <input type="radio" id="size2 " name="size" checked="checked" ></input>
+        <label for="size2">medium</label><br>
+        <input type="radio" id="size3" name="size" >large</input><br>
+        <label for="size3"></label>
+        <input type="radio" id="size4" name="size">Extra large</input><br>
+        <label for="size4"></label>
+    </div>
+<br>
+    <div class="crust">
+    
+            <label for="crust">Choose a crust</label><br>
+            <select name="crust" id="crust" required>
+            <option selected placeholder="Choose a crust" disabled >choose</option>
+            <option>thin</option>
+            <option>thick</option>
+            <option>stuffed</option>
+            <option>gluten-free</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div class="Sauce">
+        <label for="Sauce">Choose a sauce</label><br>
+        <select name="Sauce">
+        <option>Choose a sauce</option>
+        <optgroup label="Classic">
+            <option>Tomato</option>
+            <option>Garlic White</option>
+        </optgroup>
+        <optgroup label="Special">
+            <option>Pesto</option>
+            <option>Barbecue</option>
+        </optgroup>
+        </select>
+    </div>
+<br>
+<br>
+<div class="Toppings">
+        <label for="Toppings">Choose Topping</label><br>
+      
+        <input type="checkbox" checked="checked" id="cheese "disabled>
+        <label for="cheese">cheese</label><br>
+        <input type="checkbox" id="pepper">
+        <label for="pepper">pepper</label><br>
+        <input type="checkbox" id="mushroom">
+        <label for="mushroom">mushroom</label><br>
+        <input type="checkbox" id="oninons">
+        <label for="oninons">oninons</label><br>
+        <input type="checkbox" id="bellpaper">
+        <label for="bellpaper">bellpaper</label><br>
+        <input type="checkbox" id="olives">
+        <label for="olives">olives</label><br>
+        <input type="checkbox" id="bacon">
+        <label for="bacon">bacon</label><br>
+        <input type="checkbox" id="pineapple" title="Warning:Pineapple on pizza is controversial"></input>
+        <label for="pineapple" title="Warning:Pineapple on pizza is controversial">pineapple</label><br>
+    </div>
+<br>
+<br>
+    <div class="Delivery Method">
+        <label>Delivery Method</label><br>
+            <input type="radio" id="home_delivery" name="d_m"></input>
+            <label for="home_delivery">Home delivery</label><br>
+            <input type="radio" id="pick_up" name="d_m"></input>
+            <label for="pick_up">Store pick up</label><br>
+            <label>
+                <textarea placeholder="home address" rows="3" float="right"></textarea>
+            </label>
+    </div>
+<br>
+    <div class="Payment Info">
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label>Payment Information</label><br>
+            <select required>
+                <option >Payment Method</option>
+                <option>Credit card</option>
+                <option>Gcash</option>
+                <option>Cash on Delivery</option>
+            </select>
+            <br>
+            <br>
+              <label for="card">Required for Credit Card only</label><br>
+            <input type="text" id="card" pattern="[0-9]{16}" maxlength="16" placeholder="1236547896547852"></input>
+          </fieldset>
+    </div>
+
+    <div class="tables"></div>
+        <label>ORDER SUMMARY</label><br>
+        <table >
+
+        <tr >
+        <th>Size</th>
+         <th>Base Price</th>
+          <th>Extra Topping(each)</th>
+        </tr>
+
+        <tr>
+                <td>small</td>
+                <td>199</td>
+                <td>+20</td>
+                </tr>
+
+                <tr>
+                <td>Medium</td>
+                <td>299</td>
+                <td>+25</td>
+                </tr>
+
+                <tr>
+                <td>large</td>
+                <td>399</td>
+                <td>+35</td>
+                </tr>
+
+                <tr>
+                <td>Extra large</td>
+                <td>499</td>
+                <td>+35</td>
+                </tr>
+</table>    
+    </div>
+<br>
+<br>
+    <div class="btn">
+       
+            
+            <button type="submit" onclick="alert('Oder Placed')" >PlaceOrder</input>
+            <button type="reset" id="res" >Start Over</button>
+         
+            
+    </div>
+
+
+
+
+
+</body>
+</html>

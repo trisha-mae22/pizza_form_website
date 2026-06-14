@@ -1,0 +1,441 @@
+body{
+    margin:1.25rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(219, 221, 199);
+}
+
+h1{
+    text-align:center;
+   
+
+}
+
+.navbar ul{
+    list-style-type:none;
+    background-color: rgb(126, 31, 31);
+    border-radius: 5px;
+    padding: 1rem;
+    overflow:hidden;
+    gap:50px;
+    display: flex;
+    margin-bottom: 15px;
+     
+
+
+}
+.navbar a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding:0.9375rem;
+    
+}
+
+.navbar a:hover{
+    background-color: rgb(79, 22, 22);
+}
+.navbar li{
+    float:left;
+      margin: 1.25rem;
+}
+
+
+
+
+  /*   background-color: rgb(255, 255, 255);
+    margin:20px;
+    border-radius: 25px;
+    width:40%;
+    height:600px;
+} */
+
+
+    
+
+.Form fieldset{
+    border:none;
+}   
+
+
+
+
+
+.size,.delivery_method,.payment_info{
+
+    padding:1.25rem;
+    margin:20px;
+    border-radius: 25px;
+    font-size: larger;
+}
+
+
+.delivery_method{
+      line-height: 45px;   
+}
+.location_img{
+    position: relative;
+    width: 600px;
+    right: -30px;
+    top:-50px; 
+}
+
+#card{
+     width: 360px;
+    height: 30px;
+    font-size: medium;
+    border:none;
+    margin:13px;
+}
+
+.card_input{
+    border: 2px solid black;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+     padding-left:10px;
+     margin-top: 25px;
+     margin-left: 30px;
+     border-radius: 10px;
+     width: 435px;
+     height: 60px;
+}
+
+#card:focus{
+    outline: none;
+}
+
+.wallet{
+     width:300px;
+     height: auto;
+     position: relative;
+     right:-350px;
+     top:-40px;
+     opacity: 0.7;
+}
+
+
+
+
+
+
+
+.personalform{
+      padding:0.625rem;
+    margin:1.25rem;
+    font-size: 1.88rem;
+  
+}
+#name,#email,#phone,#age{
+    width: 500px;
+    height: 45px;
+    margin: 0.3125rem 1rem 0.9375rem;
+    padding-left:0.625rem;
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+.pizza_size,.crustlabel,.saucelabel,.toppinglabel,.deliverylabel,.paymentlabel,.tablelabel,.personallabel{
+    text-align: left;
+    padding: 0.9375rem;
+    width:70%;
+    margin:1.25rem 1.25rem 1rem;
+    border-bottom : 3px solid;
+    border-color:rgb(126, 31, 31);
+    font-size: 1.875rem;
+ 
+}
+
+.crust select,.Sauce select,.payment_info select {
+    width:450px;
+    height:60px;
+   font-size: medium;
+    padding: 1.25rem;
+    margin:1.25rem 2rem 1.25rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.toppings{
+    font-size: larger;
+     margin:1.25rem 2rem 1.25rem;
+     line-height: 40px;
+     accent-color:rgb(126, 31, 31);
+}
+.toppings input{
+  width:20px;
+  height: 20px;
+  margin-right:1.70rem;
+
+}
+
+
+.sauces{
+    font-size: larger;
+    line-height: 40px;
+    display: inline-block;
+}
+.sauces span{
+     color:rgb(126, 31, 31);
+     font-weight:bold;
+}
+.sauces li{
+  margin-left: 2rem;
+  font-size: large;
+}
+.sauce_visual,.sauce_visual_a{
+    width:170px;
+    height: 100px;
+    display:grid;
+    position: relative;
+    left:280px;
+    top:-270px;
+    margin-top:-15px;
+   
+}
+.b{
+    margin-top: 20px;
+}
+
+.whole_pizza{
+        width:560px;
+    margin: 0px;
+    position: relative;
+    right:-320px;
+    top:-270px;
+
+}
+
+
+
+
+.tablestyle {
+    width:550px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border-collapse: collapse;
+    border-radius:10px;
+    overflow: hidden;
+    table-layout: fixed; 
+}
+
+div.tablecontainer{
+    overflow-x: auto;
+}
+.tablestyle td{
+   padding: 1.25rem;
+  text-align: center;
+ 
+  border:3px solid rgb(223, 222, 218);
+}
+
+.tablestyle th{
+     padding: 1.25rem;
+  text-align: center;
+  background-color: rgb(126, 31, 31);
+  color:white;
+  
+}
+/* 
+.tablestyle tr:nth-child(even){
+    background-color: rgb(197, 203, 203);
+} */
+.tablestyle tr:hover{
+    background-color: rgb(204, 209, 214);
+}
+
+.btn{
+    display:flex;
+    gap:20px;
+     
+     margin:5px 50px 5px;
+}
+
+.btnsub,.btnres{
+      
+   width: 230px;
+    height:50px;
+    background-color:  rgb(154, 44, 44);
+    color: white;
+     border-radius: 5px;
+     font-size: medium;
+   
+}
+.btnres{
+    background-color: white;
+    color: rgb(154, 44, 44);
+   
+}
+
+
+.btnsub:hover, .btnres:hover{
+  background-color: rgb(126, 31, 31);
+  color: rgb(255, 255, 255);
+}
+
+
+/* 
+.btnsub:active{
+      background-color:red;
+} */
+
+
+/* tip: the class of the button must be inside actual na line ng button , wag na ilagay sa loob ng div */
+
+
+.container{
+    display:flex;
+    justify-content: center;
+   
+}/* this code is what makes the form go side by side */
+
+
+.formsauce,.formdelivery,.formtablesum,.Form{
+     background-color: rgb(255, 255, 255);
+    margin:1.25rem 0.3125rem 1.25rem ; 
+    border-radius: 25px;
+    width:40%;
+    height:600px;
+    padding:0.9375rem;
+     position: relative;
+     overflow: hidden;
+
+}
+.formtoppings,.formpayment,.formsize,.formcrust{
+     background-color: rgb(255, 255, 255);
+  margin:1.25rem 0.3125rem 1.25rem ; 
+    border-radius: 25px;
+    width:40%;
+    height:600px;
+     padding:0.9375rem;
+     position: relative;
+     overflow: hidden;
+}
+
+
+    
+    
+
+
+
+.small_size_pizza{
+      width:100px;
+    height:100px;
+margin:0.1rem 1.25rem 1rem;
+   
+}
+
+.medium_size_pizza{
+    width:110px;
+    height:110px;
+   margin-left:10.5rem;
+   margin:0.1rem 1.25rem 1rem;
+}
+.large_size_pizza{
+    width:120px;
+    height:120px;
+   margin:0.1rem 1.25rem 1rem;
+     
+}
+.xlarge_size_pizza{
+    width:130px;
+    height:130px;
+margin:0.1rem 1.25rem 1rem;
+    
+}
+
+.pizzaradio_btn{
+  width: 25px;
+  height: 25px;
+}
+ 
+.psmall,.pmedium,.plarge,.pxlarge{
+     display: flex;
+    align-items: center;
+    margin-left:1.75rem;
+    margin-right: 1.75rem;
+   
+}
+
+
+
+.pizza_slice{
+    width:350px;
+    height: 400px;
+   position:absolute;
+   top:310px;
+   right:30px;
+   opacity: 0.5;
+}
+
+
+.btn_next{
+    width:70px;
+    height:35px;
+    background-color: rgb(145, 41, 41);
+    float:right;
+    margin-top:10px;
+    margin-right: 15px;
+    vertical-align: bottom;
+    vertical-align: right;
+    border: none;
+    border-radius: 3px;
+   
+}
+#btn_crust{
+    position: relative;
+    top:340px;
+}
+#btn_sauce{
+     position: relative;
+     top:110px;
+     right: -20px;
+}
+#btn_delivery{
+      position: relative;
+     top:120px;
+}
+#btn_ordersum{
+    float:left;
+    margin-left: 20px;
+     position: relative;
+  top:20px;
+}
+#btn_personal{
+    position: relative;
+    top:10px;
+}
+
+.homebg{
+    width: 97.3%;
+    height: 75vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+   
+}
+.homebg:hover{
+      opacity:1;
+}
+     /* position: absolute;
+    z-index: -1;
+} */
+.order_now{
+    width:200px;
+    height:75px;
+    background-color:  rgb(145, 41, 41);;
+    color: white;
+    position: relative;
+   top:255px;
+   left:660px;
+   border:1px solid white;
+   border-radius: 5px;
+   text-decoration: none;
+}
+#order_now{
+    text-decoration: none;
+  
+}
+.order_now:hover{
+    background-color:  rgb(79, 22, 22);
+}
